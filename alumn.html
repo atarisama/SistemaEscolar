@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión Académica</title>
+    <link rel="stylesheet" href="alumno.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Sistema Académico</div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Módulos de Consulta</a>
+                    
+                    <ul class="dropdown-content">
+                        <li><a href="#calificaciones">Ver Calificaciones</a></li>
+                        <li><a href="#alumnos">Nombres de Alumnos</a></li>
+                        <li><a href="#materias">Materias del Alumno</a></li>
+                        <li><a href="#telefonos">Teléfonos de Alumnos</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Soporte Técnico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="bienvenida" class="section-card">
+            <h2>Bienvenido al Sistema de Gestión</h2>
+            <p>Utiliza el menú "Módulos de Consulta" para acceder a las listas completas de información académica y administrativa de los alumnos.</p>
+        </section>
+
+        <section id="calificaciones" class="section-card">
+            <h3>📊 Calificaciones por Alumno</h3>
+            <p>Datos simulados de las calificaciones de varios alumnos en diferentes materias.</p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nombre del Alumno</th>
+                        <th>Materia</th>
+                        <th>Calificación</th>
+                        <th>Período</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>José Pérez García</td><td>Cálculo Integral</td><td>9.5</td><td>Otoño 2025</td></tr>
+                    <tr><td>María López Ruíz</td><td>Física Moderna</td><td>8.8</td><td>Otoño 2025</td></tr>
+                    <tr><td>Luis Soto Hernández</td><td>Programación Web</td><td>7.2</td><td>Otoño 2025</td></tr>
+                    <tr><td>Ana Gutiérrez Díaz</td><td>Álgebra Lineal</td><td>9.9</td><td>Otoño 2025</td></tr>
+                    <tr><td>Carlos Mota Paz</td><td>Historia Universal</td><td>8.5</td><td>Otoño 2025</td></tr>
+                    <tr><td>Sofía Vargas Gómez</td><td>Estadística</td><td>9.1</td><td>Otoño 2025</td></tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="alumnos" class="section-card">
+            <h3>👤 Nombres y Matrículas de Alumnos</h3>
+            <p>Listado completo de alumnos activos en el sistema.</p>
+            <ul class="data-list">
+                <li>**Matrícula A2025001:** José Pérez García</li>
+                <li>**Matrícula A2025002:** María López Ruíz</li>
+                <li>**Matrícula A2025003:** Luis Soto Hernández</li>
+                <li>**Matrícula A2025004:** Ana Gutiérrez Díaz</li>
+                <li>**Matrícula A2025005:** Carlos Mota Paz</li>
+                <li>**Matrícula A2025006:** Sofía Vargas Gómez</li>
+            </ul>
+        </section>
+        
+        <section id="materias" class="section-card">
+            <h3>Materias As

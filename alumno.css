@@ -1,0 +1,142 @@
+/* --- 1. Estilos Generales y Tipografía (Sin Cambios) --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    scroll-behavior: smooth; /* Para que la navegación interna sea suave */
+}
+
+.container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- 2. Encabezado y Navegación (Sin Cambios Significativos) --- */
+.header {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Fija el header arriba */
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list > li {
+    position: relative;
+    margin-left: 15px;
+}
+
+.nav-list a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- 3. Estilos del Menú Desplegable (Dropdown) --- */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; /* Alinear a la izquierda del botón para mejor lectura */
+    background-color: #ffffff;
+    min-width: 250px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.25);
+    z-index: 100;
+    list-style: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 10px 15px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #e6f0ff;
+    color: #1e3c72;
+}
+
+/* --- 4. Comportamiento del Despliegue --- */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- 5. Estilos de Contenido y Tablas de Datos --- */
+.section-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px; /* Separación entre secciones */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra más definida */
+}
+
+h3 {
+    border-bottom: 2px solid #2a5298; /* Separador azul para títulos */
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #1e3c72;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el doble borde */
+    margin-top: 15px;
+}
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 600;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f0f8ff; /* Resaltar fila al pasar el ratón */
+}
+
+.data-list {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.data-list li {
+    line-height: 1.8;
+    border-bottom: 1px dotted #ccc;
+    padding: 5px 0;
+}
